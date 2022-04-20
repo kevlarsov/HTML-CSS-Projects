@@ -1,6 +1,7 @@
 p {
-	color:red;
+	color:yellow;
 	background-color:gray;
 	font-size:large;
 	text-align:center;
+	text-shadow:1px 1px;
 }
