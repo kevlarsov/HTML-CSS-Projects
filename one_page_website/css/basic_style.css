@@ -26,3 +26,28 @@ h1 {
     border-radius: 25%;
     cursor: pointer;
 }
+
+.squares:nth-child(-n+4) p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.8);
+}
+
+.squares:nth-child(1) {
+    background: #4240ff;
+}
+
+.squares:nth-child(2) {
+    background: #ab3fdd;
+}
+
+.squares:nth-child(3) {
+    background: #ae163e;
+}
+
+.squares:nth-child(4) {
+    background: #00b200;
+}
