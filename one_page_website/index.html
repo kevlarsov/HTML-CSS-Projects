@@ -2,9 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>TAB TITLE</title>
+		<title>The Beer Garden</title>
         <link rel="stylesheet" href="./css/shared.css">
         <link rel="stylesheet" href="./css/animations.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 	</head>
 	<body>
 		
@@ -13,7 +17,7 @@
             <div class="menu-container">
                 <ul class="menu">
                     <a href="#home"><li>HOME</li></a>
-                    <a href="#gallery"><li>GALLERY</li></a>
+                    <a href="#gallery"><li>ON TAP</li></a>
                     <a href="#contact"><li>RESERVATIONS</li></a>
                 </ul>
             </div>
@@ -23,7 +27,7 @@
         <div id="home">
             <div class="container">
                 <div class="text-center">
-                    <span class="head-main">The Space Station</span>
+                    <span class="head-main">The Beer Garden</span>
                 </div>
             </div>
         </div>
@@ -31,15 +35,15 @@
         <!--GALLERY-->
         <section id="gallery">
             <div class="container">
-                <h1>Gallery</h1>
+                <h1>What's on tap</h1>
                 <div class="flex-container">
                     <!--PHOTO CONTAINER 1-->
                     <div class="photo-container">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_1.png" alt="">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Voodoo Ranger Classic</h3>
+                                <p>That classic kick!</p>
                             </div>
                         </div>
                     </div>
@@ -48,8 +52,8 @@
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_2.png" alt="">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Voodoo Ranger Imperial</h3>
+                                <p>Buckle up, partner!</p>
                             </div>
                         </div>
                     </div>
@@ -58,8 +62,8 @@
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_3.png" alt="">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Voodoo Ranger Juicy Haze</h3>
+                                <p>Did Jimi Hendrix name this one?!</p>
                             </div>
                         </div>
                     </div>
@@ -68,8 +72,8 @@
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_4.png" alt="">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Voodoo Ranger Juice Force</h3>
+                                <p>Hops from concentrate!</p>
                             </div>
                         </div>
                     </div>
@@ -78,18 +82,18 @@
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_5.png" alt="">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Voodoo Ranger Agent 77</h3>
+                                <p>For those who prefer it shaken, not stirred!</p>
                             </div>
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 6-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="./images/thumb/thumbnail_6.png" alt="">
+                            <img src="./images/thumb/thumbnail_6.png" alt="" id="juan">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Summer Bliss</h3>
+                                <p>Suntan lotion not included!</p>
                             </div>
                         </div>
                     </div>
@@ -98,8 +102,8 @@
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_7.png" alt="">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Mountain Time</h3>
+                                <p>Now that's what I call Rocky Mountain Water!</p>
                             </div>
                         </div>
                     </div>
@@ -108,18 +112,8 @@
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_8.png" alt="">
                             <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--PHOTO CONTAINER 9-->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="./images/thumb/thumbnail_9.png" alt="">
-                            <div class="photo-overlay">
-                                <h3>Click to Enlarge</h3>
-                                <p>We have several space launches daily, book your flight today!</p>
+                                <h3>Old Aggie</h3>
+                                <p>The original battering Ram!</p>
                             </div>
                         </div>
                     </div>
@@ -132,12 +126,12 @@
             <div class="container">
                 <div class="heading-padding">
                     <h1 class="heading-padding">Reservations</h1>
-                    <div class="resservation">
-                        <h2><span>Your adventure is just around the moon!</span>
-                            <br>Reserve your flight today!
+                    <div class="reservation">
+                        <h2><span>Come drink some beer with us!</span>
+                            <br>Reserve your tasting today!
                         </h2>
                         <p class="rsvp-text">
-                            Please provide us with your contact info.
+                            Please provide us with your contact info below:
                         </p>
                         <div class="form-rsvp">
                             <form action="" method="post">
@@ -160,7 +154,7 @@
 
         <!--FOOTER-->
         <div id="footer">
-            www.thespacestation.space &nbsp;|&nbsp; &copy; 2022
+            www.thebeergarden.banana &nbsp;|&nbsp; &copy; 2022
         </div>
 
 	</body>
