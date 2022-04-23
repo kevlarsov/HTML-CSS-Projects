@@ -29,7 +29,7 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #E91C1C;
+    color: black;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
@@ -227,6 +227,7 @@ section {
     color: #13161B;
     width: 50%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .reservation form {
@@ -266,8 +267,13 @@ section {
     box-shadow: 0 0 18px rgba(100,65,0,0.8);
 }
 
+.rsvp {
+    display: block;
+    margin: 8px 0;
+}
+
 .form-spacer {
-    padding: 30px 39px;
+    padding: 10px 0;
 }
 
 .terms {
