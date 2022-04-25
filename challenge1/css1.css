@@ -1,0 +1,102 @@
+img {
+    transition: .7s ease-in;
+    filter: invert(100%);
+}
+
+.video {
+    transition: .7s ease-in;
+}
+
+table {
+    margin-right: auto;
+    margin-bottom: 5em;
+    margin-left: auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.top-row {
+    background-color: aqua;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+.p-text {
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.p-text:hover {
+    color: blue;
+}
+
+li {
+    display: inline;
+    padding: 0.8em;
+    color: blueviolet;
+}
+
+li:hover {
+    color: red;
+}
+
+.navbar {
+    margin-bottom: 5em;
+    background-color: tan;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 3em;
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+
+.column {
+    float: left;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 5em;
+    width: 49%;
+    color: green;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.overlay {
+    transition: .7s ease-in;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover img {
+    opacity: 0.6;
+}
+
+.container:hover .video {
+    opacity: 0.6;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
