@@ -98,7 +98,7 @@ footer {
 /***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: black; /* This colors the navbar black */
+    background-color: #4B0082; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
@@ -174,7 +174,7 @@ footer {
 
 /* Texts over the video */
 .Video_Text {
-    background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
+    background-color: #483D8B;
     color: white; /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
     padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
@@ -217,7 +217,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-color: #4d4d4d;
+    background-color: #6A5ACD;
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
@@ -255,7 +255,7 @@ input[type=text]:hover {
 
 /* Submit button */
 input[type=submit] {
-    background-color: black; /* Sets the background color of the submit button to black */
+    background-color: #6A5ACD; /* Sets the background color of the submit button to black */
     color: white; /* Sets the font color of the Submit button to white */
     font-weight: bold; /* Makes the font of the submit button bold */
     padding: 12px 20px; /* Adds padding to the submit button */
@@ -270,7 +270,7 @@ input[type=submit] {
 
 /* Hover effect for submit button */
 input[type=submit]:hover {
-    background-color: white; /* Turns the background of the submit button white when the user hovers over it */
+    background-color: #DC143C; /* Turns the background of the submit button white when the user hovers over it */
     color: black; /* Turns the font black when hovered over */
     transform: scale(1.5); /* Makes the button increase 1.5 times in size */
     transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
