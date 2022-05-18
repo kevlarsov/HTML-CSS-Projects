@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>The Beer Garden</title>
+        <script src="./js/main.js" defer></script>
         <link rel="stylesheet" href="./css/shared.css">
         <link rel="stylesheet" href="./css/animations.css">
         <link rel="stylesheet" href="./css/one_page_website.css">
+        <link rel="stylesheet" href="./css/lightbox.css">
         <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -39,7 +41,7 @@
                 <h1>What's on tap</h1>
                 <div class="flex-container">
                     <!--PHOTO CONTAINER 1-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(1)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_1.png" alt="">
                             <div class="photo-overlay">
@@ -49,7 +51,7 @@
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 2-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(2)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_2.png" alt="">
                             <div class="photo-overlay">
@@ -59,7 +61,7 @@
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 3-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(3)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_3.png" alt="">
                             <div class="photo-overlay">
@@ -69,7 +71,7 @@
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 4-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(4)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_4.png" alt="">
                             <div class="photo-overlay">
@@ -79,7 +81,7 @@
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 5-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(5)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_5.png" alt="">
                             <div class="photo-overlay">
@@ -89,7 +91,7 @@
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 6-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(6)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_6.png" alt="" id="juan">
                             <div class="photo-overlay">
@@ -99,7 +101,7 @@
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 7-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(7)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_7.png" alt="">
                             <div class="photo-overlay">
@@ -109,13 +111,103 @@
                         </div>
                     </div>
                     <!--PHOTO CONTAINER 8-->
-                    <div class="photo-container">
+                    <div class="photo-container" onclick="openModal();currentSlide(8)">
                         <div class="photo">
                             <img src="./images/thumb/thumbnail_8.png" alt="">
                             <div class="photo-overlay">
                                 <h3>Old Aggie</h3>
-                                <p>The original battering Ram!</p>
+                                <p>The original battering ram!</p>
                             </div>
+                        </div>
+                    </div>
+
+                    <!--MODAL/LIGHTBOX-->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                            
+                            <div class="slides">
+                                <div class="numtext">1 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_1.png" alt="">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numtext">2 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_2.png" alt="">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numtext">3 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_3.png" alt="">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numtext">4 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_4.png" alt="">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numtext">5 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_5.png" alt="">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numtext">6 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_6.png" alt="">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numtext">7 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_7.png" alt="">
+                            </div>
+
+                            <div class="slides">
+                                <div class="numtext">8 / 8</div>
+                                <img class="modalimg" src="./images/thumb/thumbnail_8.png" alt="">
+                            </div>
+
+                            <!--NEXT/PREVIOUS CONTROLS-->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <!--CAPTION TEXT-->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <!--THUMBNAIL IMAGE CONTROLS-->
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_1.png" onclick="currentSlide(1)" alt="">
+                            </div>
+                            
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_4.png" onclick="currentSlide(4)" alt="">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_5.png" onclick="currentSlide(5)" alt="">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_6.png" onclick="currentSlide(6)" alt="">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_7.png" onclick="currentSlide(7)" alt="">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="./images/thumb/thumbnail_8.png" onclick="currentSlide(8)" alt="">
+                            </div>
+
                         </div>
                     </div>
                 </div>
