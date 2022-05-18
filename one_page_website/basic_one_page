@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Beer Garden</title>
+	</head>
+	<body>
+		
+		<!--NAV-->
+		<div>
+			<div>
+				<ul>
+					<a href="#home"id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
+		
+		<!--HOME-->
+		<div id="home">
+			<div>
+				<div>
+					<h1>The Beer Garden</h1>
+					<h5>Locally owned and operated since two months ago!<br>
+					Find us at 369 Sesame St.</h1>
+				</div>
+			</div>
+		</div>
+		
+		<!--VIDEO-->
+		<section>
+			<iframe src="https://www.youtube.com/embed/P9F6DQAhlVk" title="What a lad" width="720px" height="450px"></iframe>
+		
+		<!--GALLERY-->
+		<section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+				<div>
+				
+					<!--PHOTO CONTAINER 1-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_1.png" width="200px" height="250px" alt="Voodoo Ranger">
+							<div>
+								<h3>Voodoo Ranger</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 2-->			
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_2.png" width="200px" height="250px" alt="Voodoo Ranger Imperial">
+							<div>
+								<h3>Voodoo Ranger Imperial</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 3-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_3.png" width="200px" height="250px" alt="Voodoo Ranger Juicy Haze">
+							<div>
+								<h3>Voodoo Ranger Juicy Haze</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 4-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_4.png" width="200px" height="250px" alt="Voodoo Ranger Juice Force">
+							<div>
+								<h3>Voodoo Ranger Juice Force</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 5-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_5.png" width="200px" height="250px" alt="Voodoo Ranger Agent 77">
+							<div>
+								<h3>Voodoo Ranger Agent 77</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 6-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_6.png" width="200px" height="250px" alt="Summer Bliss">
+							<div>
+								<h3>Summer Bliss</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 7-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_7.png" width="200px" height="250px" alt="Mountain Time">
+							<div>
+								<h3>Mountain Time</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 8-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_8.png" width="200px" height="250px" alt="Old Aggie">
+							<div>
+								<h3>Old Aggie</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+					<!--PHOTO CONTAINER 9-->
+					<div>
+						<div>
+							<img src="./images/thumb/thumbnail_9.png" width="200px" height="250px" alt="Piano Keys">
+							<div>
+								<h3>Piano Keys</h3>
+								<p>We have several tastings daily, click the Reservations tab to book yours now!</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		<!--CONTACT-->
+		<section>
+			<div id="contact">
+				<div>
+					<h1>Contact</h1>
+					<div>
+						<h2><span>Your beer drinking adventure awaits.</span><br>
+							Book your tasting today!</h2>
+						<p>Please provide your contact info:</p>
+						<div>
+							<form action=""method="post">
+								<input class="rsvp"type="text"value="First Name">
+								<input class="rsvp"type="text"value="Last Name">
+								<input class="rsvp"type="text"value="Email Address">
+								<input class="rsvp"type="text"value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit"value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>&copy;COPYRIGHT&copy;</footer>
+		
+	</body>
+</html>
