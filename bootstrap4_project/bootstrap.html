@@ -50,6 +50,16 @@
         </div>
         <!--/JUMBOTRON-->
 
+        <!--DEALS-->
+        <div class="jumbotron jumbotron-fluid bg-dark mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase">gear deals</h1>
+                <p class="lead text-warning">Click the link below to sign up for this month's gear deals!</p>
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">Monthly Deals</button>
+            </div>
+        </div>
+        <!--/DEALS-->
+
         <!--ABOUT-->
         <div id="about" class="container my-5">
             <div class="row">
@@ -111,7 +121,7 @@
                         </span>
                         <div class="card-body">
                             <h5 class="card-title">Orangatang Stimulus</h5>
-                            <p class="card-text">Hit the streets with grip and style with the new Stim's, available in 3 durometers!</p>
+                            <p class="card-text">Hit the streets with grip and style on the new Stim's, available in 3 durometers!</p>
                             <a href="#" class="btn btn-primary">More Product Info</a>
                         </div>
                         <a href="#" class="badge badge-pill badge-success">Add to Cart!</a>
@@ -134,10 +144,41 @@
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="bottom" data-content="We do not under any circumstance sell customer information">Submit</button>
             </form>
         </div>
         <!--/MAILER FORM-->
+
+        <!--FORM MODAL-->
+        <div class="modal" id="register" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Please provide some basic contact information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <fieldset class="form-group">
+                                <label for="firstname">First Name:</label>
+                                <input type="text" class="form-control" id="fname" placeholder="Jim">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <label for="firstname">Email Address:</label>
+                                <input type="text" class="form-control" id="emailadd" placeholder="jimexample@web.com">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/FORM MODAL-->
 
         <!--FOOTER-->
         <div class="container mt-5">
@@ -162,5 +203,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--MAILER FORM BUTTON POPOVER-->
+    <script>
+        $('.popover-dismiss').popover({
+        trigger: 'focus'
+    })</script>
+
   </body>
 </html>
