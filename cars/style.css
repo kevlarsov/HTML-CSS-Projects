@@ -64,3 +64,7 @@ input {
     width: 130px;
     height: 30px;
 }
+
+hr {
+    border: 3px solid red;
+}
