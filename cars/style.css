@@ -1,0 +1,13 @@
+/*ZOOM IN-OUT ANIMATION*/
+#pic {
+    width: 80%;
+    margin-left: 80px;
+    animation: zoominoutsinglefeatured 10s forwards infinite;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.08,1.08);}
+    100% {transform: scale(1,1);}
+}
+/*/ZOOM IN-OUT ANIMATION*/
