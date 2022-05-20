@@ -4,8 +4,27 @@
 		<title>I Like Cars</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./style.css">
+		<script src="./main.js" defer></script>
 	</head>
 	<body>
+		<!--CONTACT US STICKY BUTTON-->
+		<div class="sticky">
+			<button id="stickybutt" type="button" onclick="openform()">Contact Us</button>
+		</div>
+
+		<div class="popup" id="myform">
+			<form class="formcontainer" action="">
+				<label for="fname"><b>First Name:</b></label>
+				<input type="text" name="fname" placeholder=" John" required>
+				<label for="email"><b>Email Address:</b></label>
+				<input type="text" name="email" placeholder=" john@example.com" required>
+				<label for="msg"><b>Message:</b></label>
+				<input type="text" name="msg" required>
+				<button type="submit" class="btn">Send Message</button>
+				<button type="button" class="btn cancel" onclick="closeform()">Close Form</button>
+			</form>
+		</div>
+
 		<nav id="nav">
 			<a href="Assignment.html">Home</a>
 			<a href="Dog.html">Dog picture</a>
@@ -29,6 +48,5 @@
 		<br><br><br>
 		<a href="#nav">Return to top of page</a>
 		<blockquote><h2>annnnnNNNDDDDD SCENE!</h2></blockquote>
-		<footer>Contact Info</footer>
 	</body>
 </html>

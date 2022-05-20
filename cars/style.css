@@ -14,3 +14,53 @@ html {
     50% {transform: scale(1.08,1.08);}
     100% {transform: scale(1,1);}
 }
+
+div.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#stickybutt {
+    margin-left: 88%;
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: 68%;
+    height: 200px;
+    max-width: 450px;
+    background-color: lightpink;
+    border: 5px solid black;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.formcontainer {
+    padding: 8px;
+}
+
+input {
+    width: 97%;
+    margin: 3px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.formcontainer .btn {
+    display: inline-block;
+    margin: 5px;
+    width: 130px;
+    height: 30px;
+}
